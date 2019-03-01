@@ -87,3 +87,17 @@
 .github__logo {
     height: 2em;
 }
+
+@media screen and (max-width: 540px) {
+    .title {
+        text-align: center;
+    }
+
+    .section--converter {
+        grid-template-columns: 1fr;
+    }
+
+    .col--center {
+        height: 20px;
+    }
+}
