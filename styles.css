@@ -57,8 +57,25 @@
 .input__select {
     width: 120px;
     vertical-align: text-bottom;
+    outline: none;
 }
 
 .section--info {
     margin-top: 2em;
+}
+
+.github {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    opacity: .15;
+    transition: opacity .25s ease-in-out;
+}
+
+.github:hover {
+    opacity: .5;
+}
+
+.github__logo {
+    height: 2em;
 }
