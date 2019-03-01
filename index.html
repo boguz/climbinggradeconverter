@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Climbing Grade Converter</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="section section--title">
+            <h1 class="title">Climbing Grade Converter</h1>
+        </div>
+        <div class="section section--converter">
+            <div class="col col--left">
+                <div class="input__container input__container--margin">
+                    <label for="originSystem" class="input__label">System: </label>
+                    <select name="originSystem" id="originSystem" class="input__select">
+                        <option value="uiaa" selected>UIAA</option>
+                        <option value="french">French</option>
+                        <option value="yds">YDS</option>
+                    </select>
+                </div>
+                <div class="input__container">
+                    <label for="originGrade" class="input__label">Grade: </label>
+                    <select name="originGrade" id="originGrade" class="input__select">
+                        <option selected disabled>-- choose --</option>
+                        <option value="7">7</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col col--center">=</div>
+
+            <div class="col col--right">
+                <div class="input__container input__container--margin">
+                    <label for="targetSystem" class="input__label">System: </label>
+                    <select name="targetSystem" id="targetSystem" class="input__select">
+                        <option value="uiaa" selected>UIAA</option>
+                        <option value="french">French</option>
+                        <option value="yds">YDS</option>
+                    </select>
+                </div>
+                <div class="input__container">
+                        <label for="originGrade" class="input__label">Grade: </label>
+                        <span id="targetGrade">1</span>
+                    </div>
+            </div>
+        </div>
+        <div class="section section--info">
+            <a href="#" target="_blank">more info</a>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
