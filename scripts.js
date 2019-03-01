@@ -72,6 +72,7 @@ function _outputResult(result) {
 function init() {
     originSystem = _getSelectValue(originSystemEl);
     targetSystem = _getSelectValue(targetSystemEl);
+    _resetOriginOptions();
 }
 
 init();
